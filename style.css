@@ -1,0 +1,452 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "cairo";
+   text-decoration: none;
+   color: black;  
+   text-decoration: none;
+   list-style: none;
+}
+
+/*fonte*/
+.cairo-uniquifier {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;}
+
+/*header*/  
+.header1{
+    background-color: lightgray;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.txt1{
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.txt2{
+    margin-inline-end: 300px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/*pag1*/
+main{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.container1{
+    gap: 5px;
+    height: 700px;
+    width: 70%;
+    display: grid;
+    grid-template-areas: 
+    'logo nav nav nav2'
+    'sidebar pesq pesq contact'
+    'sidebar foto foto foto';
+}
+.container1 div{
+    padding: 20px;
+}
+.logo{
+    grid-area: logo;
+    align-items: center;
+    height: 70px;
+}
+#nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    height: 70px;
+}
+.home{
+    color: green;
+}
+.shop :hover{
+    color: green;
+    transition: 0.3s;
+}
+#nav2{
+    grid-area: nav2;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 70px;
+    
+}
+#sidebar{
+    height: 590px;
+    grid-area: sidebar;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    list-style: none;
+    justify-content: first baseline;
+    float:left;
+    list-style: none;
+}
+.menu{
+    list-style:none;
+    float:left;
+    list-style: none;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    width: 300px;
+}
+.menu li a{
+    color:#333; text-decoration:none; padding:5px 10px; display:block;
+}
+.listen{
+    border:1px solid #c0c0c0;
+    font-size: 16px;
+    gap: 5px;
+    text-align: start;
+}
+.all{
+    background-color: #7fad39;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+#pesq{
+    height: 90px;
+    grid-area: pesq;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#input{
+    width: 300px;
+}
+#contact{
+    height: 70px;
+    grid-area: contact;
+}
+#foto{
+    background-image: url('img.header/banner.jpg');
+    background-position: 70%;
+    height: 495px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: foto;
+}
+.textfoto{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    padding-inline-start: 30px;
+}
+#fruitfresh{
+    color: green;
+    font-size: 14px; 
+}
+#tittlefoto{
+    color: black;
+    font-size: 50px;
+}
+#free{
+    color: grey;
+    font-size: 16px;
+}
+#shopnow
+{
+    padding-top: 30px;
+}
+.search{
+    grid-column: 3;
+    display: block;
+    margin: -9px;
+}
+.suporte{
+    grid-column: 4;
+    margin: -10px;
+    margin-right: -10px;
+}
+.mainmenu{
+    grid-column: 1;
+}
+.ca{
+    display: inline-block;
+    padding: 10px;
+    margin: -10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+}
+input{
+    margin-left: 5px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    padding-right: 150px;
+}
+.sitebutton{
+    padding-top: 11px;
+    padding-bottom: 9px;
+    padding-right: 25px;
+    padding-left:20px;
+    margin-left: -5px;
+    background-color: #7fad39;
+}
+#nav2
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+.contact2{
+    height: 100px;
+}
+.num{
+    font-size: 16px;
+    height: 70px;
+}
+.social-icons i{
+    font-size: 18px;
+}
+/*pag2*/
+.container2{
+    gap: 20px;
+    height: 250px;
+    width: 60%;
+    display: grid;
+    grid-template-areas: 
+    'prod1 prod2 prod3 prod4';
+}
+.container2 div{
+    padding: 20px;
+}
+.prod1{
+    background-image: url('img.pag2/cat-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod2{
+    background-image: url('img.pag2/cat-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod3{
+    background-image: url('img.pag2/cat-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod4{
+    background-image: url('img.pag2/cat-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.txtimg{
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+    font-size: 20px;
+}
+
+/*pag3*/
+.container3{
+    gap: 20px;
+    height: 400px;
+    width: 70%;
+    display: grid;
+    grid-template-areas: 
+    'prod1 prod2 prod3 prod4';
+}
+.container3 div{
+    padding: 20px;
+}
+.title1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+.sub2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 15px;
+}
+.prod1p3{
+    background-image: url('img.pag3/feature-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod2p3{
+    background-image: url('img.pag3/feature-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod3p3{
+    background-image: url('img.pag3/feature-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod4p3{
+    background-image: url('img.pag3/feature-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*linha2*/
+.prod1p3l2{
+    background-image: url('img.pag3/feature-5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod2p3l2{
+    background-image: url('img.pag3/feature-6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod3p3l2{
+    background-image: url('img.pag3/feature-7.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prod4p3l2{
+    background-image: url('img.pag3/feature-8.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.txtimgp3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 350px;
+}
+
+/*pag4*/
+.container4{
+    padding: 30px;
+    gap: 5px;
+    height: 300px;
+    width: 70%;
+    display: grid;
+    grid-template-areas: 
+    'prod1p4 prod2p4';
+    position: center;
+}
+.container4 div{
+    padding: 20px;
+}
+.prod1p4{
+    background-image: url('img.pag4/banner-1.jpg');
+    background-repeat: no-repeat;
+}
+.prod2p4{
+    background-image: url('img.pag4/banner-2.jpg');
+    background-repeat: no-repeat;
+}
+/*pag5*/
+.container5{
+    padding: 30px;
+    gap: 5px;
+    height: 500px;
+    width: 70%px;
+    
+}
+.container5 div{
+    padding: 20px;
+}
+#mainp5{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.prod1p5{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.sub1{
+    font-size: 24px;
+}
+/*pag6*/
+.container6{
+    padding: 30px;
+    gap: 5px;
+    height: 450px;
+    width: 70%;
+    display: grid;
+    grid-template-areas: 
+    'prod1p6 prod2p6 prod3p6';
+}
+.container6 div{
+    padding: 20px;
+}
+.sub1p6{
+    font-size: 36px;
+}
+.sub2p6{
+    font-size: 20px;
+}
+.sub3p6{
+    font-size: 16px;
+    color: #c3b6b2;
+}
+/*footer*/
+.container7{
+    padding: 30px;
+    gap: 5px;
+    height: 350px;
+    width: 70%;
+    display: grid;
+    grid-template-areas: 
+    'prod1p6 prod2p6 prod3p6';
+}
+.prod1p7{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.logo2{
+    width: 119px;
+    height: 50px;
+}
+.txt1footer{
+    padding-top: 15px;
+}
+.txt2footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: space-around;
+}
+.txt0-1{
+    display: flex;
+    flex-direction: column;
+}
+.txt0-2{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #f3f6fa;
+}
